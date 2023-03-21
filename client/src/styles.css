@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-	background-color: var(--bs-gray-dark);
-	color: var(--bs-light);
+	background-color: #375c4e;
+	color: white;
 	font-family: 'Lato', sans-serif;
+	text-shadow: 2px 1px black;
 }
 
 h1 {

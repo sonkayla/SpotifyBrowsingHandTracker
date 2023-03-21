@@ -19,6 +19,9 @@
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
     "chroma-js": "^2.3.0",
+    "handtrackjs": "^0.1.5",
+    "interactjs": "^1.10.17",
+    "npm-check-updates": "^16.7.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

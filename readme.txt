@@ -1,43 +1,56 @@
 --Readme document for *Kayla Son & Hoa Ta*, kaylats@uci.edu & hcta@uci.edu, *44686094 & 13506664*--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
+15/15
 
-20/20
-- 2/2 Communicating with the webserver
-- 3/3 Populating information about the user
-- 4/4 Populating the search component
-- 5/5 Artist page
-- 3/3 Album page
-- 3/3 Track page
-
+5/5 Created a functional web app
+2/2 The ability to control the web app with basic gestures
+4/4 The ability to control the web app with at least two custom gestures
+2/2 Following good principles of UI design
+1/1 Creating a compelling app and application of gestures
+1/1 A readme and demo video which explains how these features were implemented and their design rationale
 
 2. How long, in hours, did it take you to complete this assignment?
 
-40 hours
+10 hours
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
-- https://stackoverflow.com/questions/31623879/angular-2-two-way-binding-using-ngmodel-is-not-working 
-- https://stackoverflow.com/questions/38892771/cant-bind-to-ngmodel-since-it-isnt-a-known-property-of-input 
-- https://www.tektutorialshub.com/angular/ngmodel-two-way-data-binding-in-angular/
-https://angular.io/guide/dependency-injection
-- https://www.freecodecamp.org/news/html-button-link-code-examples-how-to-make-html-hyperlinks-using-the-href-attribute-on-tags/
-- https://angular.io/guide/property-binding
-- https://stackoverflow.com/questions/44288434/angular-2-ngfor-first-last-index-loop
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
-- https://stackoverflow.com/questions/49918687/differences-between-value-and-ngvalue-in-angular-5
-- https://angular.io/api/common/NgIf
-- https://stackoverflow.com/questions/35405618/ngfor-with-index-as-value-in-attribute
+- https://stackoverflow.com/questions/52240123/how-to-open-a-link-in-new-tab-using-angular
+- https://victordibia.com/handtrack.js/#/
+- https://github.com/victordibia/handtrack.js/
+- https://stackoverflow.com/questions/63541670/how-to-position-a-button-on-website-using-html-css
+- https://fontawesome.com/icons/spotify?f=brands&s=solid
+- https://www.geeksforgeeks.org/how-to-display-black-navigation-bar-in-bootstrap/
+- https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+- https://www.w3schools.com/css/css_text.asp
+- https://www.geeksforgeeks.org/how-to-open-url-in-new-tab-using-javascript/
+- https://www.teachucomp.com/create-html-bullet-points-instructions/
+- https://towardsdatascience.com/handtrackjs-677c29c1d585
+- https://stackoverflow.com/questions/37624322/uncaught-in-promise-undefined-error-when-using-with-location-in-facebook-gra
+- https://stackoverflow.com/questions/50504104/click-button-to-open-url-but-from-ts-function
+- https://stackoverflow.com/questions/52240123/how-to-open-a-link-in-new-tab-using-angular
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-We talked amongst ourselves, TA Stella, and the professor. We talked about issues that we had with our project such as the carousel not working, the thermometer files not implementing properly, and got help with the setup.
+Only discuss with the group.
 
-5. Did you add a bonus feature to your submission? If so, what is it and how should we see it?
+5. Is there anything special we need to know in order to run your code?
 
-N/A
+Need to connect to a webcam to detect the gestures
 
-6. Is there anything special we need to know in order to run your code?
+--Aim for no more than two sentences for each of the following questions.--
 
-We took out the node_modules folder as instructed. We also did not change the background colors and other css aspects since the professor said it was optional.
+6. Did you design your app with a particular type of user in mind? If so, whom?
 
+We made the design more user-friendly and access for people who have bad eyesight. All the colors and placements are chosen to lessen eye irritation.
+
+7. Describe the two custom gestures you created.
+
+- 1 open hand, 1 close hand: open artist page on Spotify
+- 1 pointing, 1 close hand: open artist track on Spotify
+
+8. How does your app implement or follow principles of good UI design?
+
+- Compelling user interface with nice color choices and appropriate size for each components
+- Display all options for gestures for the certain page that they're on, making it easy for the users to navigate

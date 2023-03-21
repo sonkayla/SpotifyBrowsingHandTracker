@@ -78,16 +78,7 @@ export class SpotifyService {
       return data['tracks'].map((track) => {return new TrackData(track);});
     });
   }
-
-  // getAlbumsForArtist(artistId:string):Promise<AlbumData[]> {
-  //   //TODO: use the albums for an artist endpoint to make a request to express.
-  //   let encoded_artist = encodeURIComponent(artistId);
-
-  //   return this.sendRequestToExpress('/artist-albums/' + encoded_artist).then((data) => 
-  //   {
-  //     return data['items'].map((album) => {return new AlbumData(album);});
-  //   });
-  // }
+  
   getAlbumsForArtist(artistId:string):Promise<AlbumData[]> {
     //TODO: use the albums for an artist endpoint to make a request to express.
     let encodedArtistId = encodeURIComponent(artistId);

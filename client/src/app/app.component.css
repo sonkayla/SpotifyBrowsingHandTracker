@@ -1,3 +1,18 @@
 nav {
 	margin-bottom: 20px;
+	padding: 0 20px 0 20px;
+}
+
+i.fa.fa-spotify, a.navbar-brand.browse { 
+	font-size: 40px;
+	color: #5acf83;
+}
+
+a.btn.btn-dark { 
+	background-color: #000000; 
+	font-size: 22px;
+}
+
+li.right{
+    float: right;
 }

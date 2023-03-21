@@ -5,6 +5,7 @@ import { TrackData } from '../../data/track-data';
 import { AlbumData } from '../../data/album-data';
 import { TrackFeature } from '../../data/track-feature';
 import { SpotifyService } from 'src/app/services/spotify.service';
+import { PredictionEvent } from 'src/app/prediction-event';
 
 @Component({
   selector: 'app-track-page',
@@ -12,9 +13,10 @@ import { SpotifyService } from 'src/app/services/spotify.service';
   styleUrls: ['./track-page.component.css']
 })
 export class TrackPageComponent implements OnInit {
-    trackId:string;
-    track:TrackData;
+  trackId:string;
+  track:TrackData;
   audioFeatures:TrackFeature[];
+  gesture:String="";
 
   //constructor(private route: ActivatedRoute) { }
   constructor(private route: ActivatedRoute, private spotifyService: SpotifyService) { }
@@ -27,6 +29,24 @@ export class TrackPageComponent implements OnInit {
       console.log(data);
       this.audioFeatures = data;});
 
+  }
+
+  prediction(event: PredictionEvent) { 
+    this.gesture = event.getPrediction();
+    if (this.gesture == "1 Pointing, 1 Closed Hand") { 
+      let button = document.getElementById("openTrack") as HTMLElement | null; 
+      button.click();
+    }
+  }
+
+  openTrack()
+  {
+    document.getElementById("openTrack").click();
+  }
+
+  goToLink()
+  {
+    window.open(this.track.url, "_blank");
   }
 
 }

@@ -1,3 +1,13 @@
+<div>
+	<h3> Use your hand!</h3>
+	<ul>
+		<li> 1 pinching: Reroute to Home Page</li>
+		<li> 1 pointing, 1 closed hand: Open Track on Spotify</li>
+	</ul>
+	<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+	<div [innerHTML]="gesture"></div>
+</div>
+
 <div class="row">
 	<div *ngIf="track" class="col-6">
 		<!--TODO: populate with track name-->
@@ -19,7 +29,7 @@
 		</p>
 		<p>
 			<!--TODO: link to track page on spotify, display track name-->
-			<a class="btn btn-light" role="button" target="_blank" [href]="track.url">Open {{track.name}} on Spotify</a>
+			<a id="openTrack" class="btn btn-dark" role="button" target="_blank" (click)="goToLink(track.URL)" >Open {{track.name}} on Spotify</a>
 		</p>
 	</div>
 	<div *ngIf="audioFeatures" class="col-6">

@@ -27,4 +27,16 @@ export class AboutComponent implements OnInit {
     });
   }
 
+  loadAboutMe() {
+    document.getElementById("loadAboutMe").click(); 
+  }
+
+  openSpotify() {
+    document.getElementById("openSpotify").click();
+  }
+
+  goToLink(){
+    window.open(this.profile_link, "_blank");
+  }
+
 }
