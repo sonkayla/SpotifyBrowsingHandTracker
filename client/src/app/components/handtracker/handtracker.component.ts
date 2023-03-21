@@ -135,7 +135,7 @@ export class HandtrackerComponent implements OnInit {
             }
 
             // Gesture 3: 2 closed hands --> open Profile
-            if (closedhands > 1 ) {
+            if (closedhands == 1 ) {
               this.detectedGesture = "One Closed Hands";
               this.aboutComponent.openSpotify();
             }
