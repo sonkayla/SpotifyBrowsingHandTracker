@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SpotifyService} from 'src/app/services/spotify.service';
+import { PredictionEvent } from 'src/app/prediction-event';
 
 @Component({
   selector: 'app-about',
@@ -10,6 +11,7 @@ export class AboutComponent implements OnInit {
   name:string = null;
   profile_pic:string = "../../../assets/unknown.jpg";
   profile_link:string = null;
+  gesture:String="";
 
   //TODO: inject the Spotify service
   constructor(private spotifyService: SpotifyService) { }
@@ -25,6 +27,14 @@ export class AboutComponent implements OnInit {
       this.profile_pic = data.imageURL;
       this.profile_link = data.spotifyProfile;
     });
+  }
+
+  prediction(event: PredictionEvent) { 
+    this.gesture = event.getPrediction();
+    if (this.gesture == "1 Closed Hand") { 
+      let button = document.getElementsByClassName("btn btn-light")[0] as HTMLElement | null; 
+      button.click();
+    }
   }
 
   loadAboutMe() {
