@@ -37,7 +37,10 @@ Only discuss with the group.
 
 5. Is there anything special we need to know in order to run your code?
 
-Need to connect to a webcam to detect the gestures
+This is just a note that there are 7 total different gestures that are split throughout the pages:
+- 4 are on the homepage (4 basic)
+- 2 are on the artist page (1 custom, 1 basic)
+- 2 are on the track page (1 custom, 1 same basic as artist)
 
 --Aim for no more than two sentences for each of the following questions.--
 
