@@ -1,4 +1,9 @@
---Readme document for *Kayla Son & Hoa Ta*, kaylats@uci.edu & hcta@uci.edu, *44686094 & 13506664*--
+--Readme document for *Kayla Son & Hoa Ta--
+
+Spotify Browsing Hand Tracker is a unique and interactive web application that allows users to control their Spotify music playback using hand gestures. This project utilizes hand-tracking technology through a webcam to recognize gestures and trigger actions, such as play, pause, skip, and adjust volume, making it an exciting and hands-free way to enjoy your music.
+
+[![Demo Video](demo_thumbnail.png)](https://www.youtube.com/watch?v=lI6VSnP7NdY&ab_channel=KaylaTuongViSon)
+
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 15/15
